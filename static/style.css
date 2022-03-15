@@ -31,6 +31,9 @@ p { margin:0 }
 	height: 4px;
 	background-color: rgb(0, 0, 0);
 }
+.skills{
+    width: 40%;   
+}
 .nav-img{
     height: 50px;
 }
@@ -38,8 +41,19 @@ p { margin:0 }
     color: black;
 }
 
-.cv-btn{
-    color: black;
+.cv-item{
+    background-color: rgba(55, 122, 51, 0.7);
+    border-radius: 5px;
+    width: 80px;
+    font-weight: bold;
+}
+
+.cv-item a{
+    color: white !important;
+}
+
+.cv-item:hover{
+    background-color: rgba(55, 122, 51, 1);
 }
 
 
@@ -145,4 +159,14 @@ p { margin:0 }
 }
 .publication-holder p{
     font-size: 0.9rem;
+}
+
+
+/* css for certificate page */
+
+.certificate-card-img{
+    height: 400px;
+    width: 600px;
+    font-weight: bold;
+    margin-left: 5px;
 }
