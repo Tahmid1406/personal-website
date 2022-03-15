@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block content%}
+ 
+<div class="">
+
+    <div class="container mt-3">
+        <h4 class="underline">Academic Results</h4>
+        
+        <div class="row mt-5">
+            
+            <div class="col-md-6">
+                <div class="card result-card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="result-card-img" src="{{ url_for('static',filename='images/nsu.png') }}" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">BSc. In Computer Science & Engineering</h5>
+                            <h6> <i>North South University</i> </h6>
+                            <p class="card-text">Dhaka, Bangladesh. </p>
+                            <p class="card-text">Cgpa : 3.57/4.00 (~90% Marks) </p>    
+                            <p class="card-text">Spring 2017 - Spring 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="card result-card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="result-card-img" src="{{ url_for('static',filename='images/baf.png') }}" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Higher Secondary School Certificate</h5>
+                            <h6> <i>Bangladesh Air Force Shaheen College.</i> </h6>
+                            <p class="card-text">Dhaka, Bangladesh. </p>
+                            <p class="card-text">GPA : 5.00/5.00 </p>    
+                            <p class="card-text">2014 - 2017</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="card result-card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="result-card-img gas" src="{{ url_for('static',filename='images/gas.png') }}" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Secondary School Certificate</h5>
+                            <h6> <i>Bangladesh Gas Fields High School & College.</i> </h6>
+                            <p class="card-text">Brahmanbaria, Chottogram. </p>
+                            <p class="card-text">GPA : 5.00/5.00 </p>    
+                            <p class="card-text">2013</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card result-card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="result-card-img" src="{{ url_for('static',filename='images/bau.png') }}" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Junior School Certificate</h5>
+                            <h6> <i>Bauphal Government Model High School.</i> </h6>
+                            <p class="card-text">Patuakhali, Barisal. </p>
+                            <p class="card-text">GPA : 5.00/5.00 </p>    
+                            <p class="card-text">2012</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        
+        <div class="row education">
+            <div class="col-lg-6 col-md-12">
+                <div class="acc-box">
+                    <div>
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>BSc. In Computer Science & Engineering</span>
+                    </div>
+                    <img src="{{ url_for('static',filename='images/nsu.png') }}" class="school-img nsu" alt="">
+                    <div class='box-content'>
+                        <h5 class='school-name'>North South University.</h5>
+                        <p>Dhaka, Bangladesh. </p>
+                        <p>CGPA : 3.57/4.00 (~90% Marks) </p>    
+                        <p>Spring 2017 - Spring 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="acc-box">
+                    <div>
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Higher Secondary School Certificate</span>
+                    </div>
+                    <img src="{{ url_for('static',filename='images/baf.png') }}" class='school-img shaheen' alt="">
+                    <div class='box-content'>
+                        <h5 class='school-name'>Bangladesh Air Force Shaheen College. </h5>
+                        <p>Dhaka, Bangladesh. </p>
+                        <p>GPA : 5.00/5.00 </p>   
+                        <p>2014 - 2016</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-6 col-md-12">
+                <div class="acc-box">
+                    <div>
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Secondary School Certificate</span>
+                    </div>
+                    <img src="{{ url_for('static',filename='images/gas.png') }}" class='school-img gas' alt="">
+                    <div class='box-content'>
+                        <h5 class='school-name'>Bangladesh Gas Fields High School & College. </h5>
+                        <p>Brahmanbaria, Chottogram. </p>
+                        <p>GPA : 5.00/5.00 </p>   
+                        <p>2013</p>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="col-lg-6 col-md-12">
+                <div class="acc-box">
+                    <div>
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Junior School Certificate</span>
+                    </div>
+                    <img src="{{ url_for('static',filename='images/bau.png') }}" class='school-img bau' alt="">
+                    <div class='box-content'>
+                        <h5 class='school-name'>Bauphal Government Model High School. </h5>
+                        <p>Patuakhali, Barisal. </p>
+                        <p>GPA : 5.00/5.00 </p>   
+                        <p>2012</p>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div> -->
+    
+    </div>
+</div>
+{% endblock %}    

@@ -23,16 +23,38 @@ def about():
     return render_template('about.html')
 
 
-########## education page ############
-@app.route('/education', methods=['POST', 'GET'])
-def education():
-    return render_template('education.html')
+
+
+########## results page ############
+@app.route('/results', methods=['POST', 'GET'])
+def results():
+    return render_template('results.html')
+
+
+
+    
+########## courseProject page ############
+@app.route('/courseProject', methods=['POST', 'GET'])
+def courseProject():
+    return render_template('courseProject.html')
+
+
+
+########## thesis page ############
+@app.route('/thesis', methods=['POST', 'GET'])
+def thesis():
+    return render_template('thesis.html')
+
+
+
 
 
 ########## publication page ############
 @app.route('/publication', methods=['POST', 'GET'])
 def publication():
     return render_template('publication.html')
+
+
 
 
 

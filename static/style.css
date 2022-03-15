@@ -27,13 +27,21 @@ p { margin:0 }
 .underline:after {
 	content: '';
 	display: block;
-	width: 15%;
+	width: 10%;
 	height: 4px;
 	background-color: rgb(0, 0, 0);
 }
 .nav-img{
     height: 50px;
 }
+.cv-item{
+    color: black;
+}
+
+.cv-btn{
+    color: black;
+}
+
 
 /* css for index page */
 .profile-image{
@@ -52,68 +60,89 @@ p { margin:0 }
     font-size: 1rem;
 }
 
-.cv-btn{
-    color: aquamarine !important;
-}
 
 .index-social-logo{
     text-align: center;    
 }
 .index-social-logo i{
     font-size: 2rem;
-    color: rgb(0, 0, 0, 0.7);
+    color: rgba(55, 122, 51, 0.9);
     padding: 10px;
 }
 
 .index-social-logo i:hover{
     transform: scale(1.1);
-    color: rgb(0, 0, 0);
+    color: rgba(55, 122, 51, 1);
 }
 
 
-
-
-
-.counter {
-    flex: 1 1 12rem;
+/* css for the result page */
+.card-horizontal {
     display: flex;
+    flex: 1 1 auto;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
 }
-.counter .box {
-    height: 100px;
-    width: 200px;
-    background: rgba(0, 0, 0, 0.7);
-    text-align: center;
-    padding: 2rem;
-    margin: 2rem;
-    border-radius: 1rem;
-    transition: transform 0.2s; /* Animation */
+.result-card{
+    margin-bottom: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.counter .box:hover {
-    background: rgba(0, 0, 0, 0.9);
-    transform: scale(1.01);
+.result-card-img{
+    height: 150px;
+    width: 150px;
+    font-weight: bold;
+    margin-left: 5px;
 }
 
-.counter .box span {
+.result-card h5{
     font-size: 1rem;
-    color: var(--yellow);
+    font-weight: bold;
 }
 
-.counter .box img {
-    height: 1rem;
-    width: 1rem;
-    margin-bottom: 5px;
+.result-card h6{
+    font-size: 0.9 rem;
 }
 
-.counter .box i {
+.result-card p{
+    font-size: 0.8rem;
+}
+
+.gas{
+    height: 130px;
+    width: 130px;
+    margin-left: 20px;
+}
+
+
+
+/* css for the publications page */
+.publication-holder{
+    background-color: rgba(247, 248, 249, 0.2);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.tag{
+    background-color:rgba(55, 122, 51, 0.7);
+    padding: 8px;
+    top: 1px;
+    left: -80px;
+    color: white;
+    border-radius: 5px;
+}
+.publication-holder h5{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.publication-holder i{
     font-size: 1rem;
-    color: rgb(171, 216, 126);
-    margin-bottom: 5px;
 }
 
-.counter .box h3 {
-    font-size: 1rem;
-    color: #fff;
+.publication-holder a{
+    color: rgba(55, 122, 51, 1);
+}
+.publication-holder p{
+    font-size: 0.9rem;
 }
